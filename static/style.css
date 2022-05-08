@@ -1,0 +1,38 @@
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+
+body{
+    background-color: #000000;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+.w3-container ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+.w3-container li {
+float: left;
+}
+
+.w3-container li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: #04AA6D;
+} 

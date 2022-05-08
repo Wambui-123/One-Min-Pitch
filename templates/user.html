@@ -1,0 +1,17 @@
+{% extends signup.html %}
+{% block content %}
+<div> 
+    {% for key, value in result.items()  %}
+    <p>
+        {{key}}
+    </p>
+    <h4>
+        {{value}}
+    </h4><br>
+    <h4>John Doe</h4><br>
+    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"  onclick="upvote()"><i class="fa fa-thumbs-up"><span id="votes">0</span></i></button>
+    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"  onclick="downvote()"><i class="fa fa-thumbs-down"><span id="vote">0</span></i></button>
+    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"  onclick="onButtonClick()"><i class="fa fa-comment"></i> Comment</button> 
+</div>
+
+{% endblock %}
